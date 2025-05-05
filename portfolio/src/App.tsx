@@ -13,6 +13,7 @@ import bughuntImage from './assets/bughunt.jpeg';
 import wcs1 from './assets/wcs1.jpeg';
 import wcs2 from './assets/wcs2.jpeg';
 import wcs3 from './assets/wcs3.jpeg';
+import { Analytics } from "@vercel/analytics/react";
 
 const AppContainer = styled.div`
   min-height: 100vh;
@@ -359,6 +360,7 @@ function App() {
         <Route path="/bughunt" element={<BugHuntPage />} />
         <Route path="/web-content-summarizer" element={<WebContentSummarizerPage />} />
       </Routes>
+      <Analytics />
     </AppContainer>
   );
 }
